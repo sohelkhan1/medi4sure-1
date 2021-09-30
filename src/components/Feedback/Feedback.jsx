@@ -14,14 +14,14 @@ export const Feedback = () => {
         className="fbrow"
       ></Form.Control>
       <Row className="fbrow">
-        <Col lg={8}></Col>
+        <Col lg={10}></Col>
         <Col lg={1}>
           <Button>Submit</Button>
         </Col>
         <Col lg={1}>
           <Button>Cancel</Button>
         </Col>
-        <Col lg={2}></Col>
+        <Col></Col>
       </Row>
     </Form>
   );

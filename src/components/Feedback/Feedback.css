@@ -1,7 +1,6 @@
 .fbrow{
     margin: 10px;
     padding: 10px;
-    background-color: lightgreen;
-    border-color:  red;
-    
+    background-color: limegreen;
+    border: limegreen;
 }
