@@ -1,32 +1,28 @@
-import { Row, Col, Form, FormControl,Button } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
 import "./Feedback.css";
 
 export const Feedback = () => {
   return (
-    <div>
-    <Row>
-      <Col>
-      <Form>
-      <Form.Control placeholder="Enter the Title" className="fbrow"/ >
-      </Form>
-      </Col>
-    </Row>
-    <Row>
     <Form>
-    <FormControl as="textarea" placeholder="Enter Your Feedback" className="fbrow"  />
+      <Form.Control
+        placeholder="Enter the Title..."
+        className="fbrow"
+      ></Form.Control>
+      <Form.Control
+        as="textarea"
+        placeholder="Enter Feedback here..."
+        className="fbrow"
+      ></Form.Control>
+      <Row className="fbrow">
+        <Col lg={8}></Col>
+        <Col lg={1}>
+          <Button>Submit</Button>
+        </Col>
+        <Col lg={1}>
+          <Button>Cancel</Button>
+        </Col>
+        <Col lg={2}></Col>
+      </Row>
     </Form>
-    </Row>
-    <Row>
-      <Col lg={10}></Col>
-      <Col lg={1}>
-        <Button>Sumbit</Button>
-      </Col>
-      <Col lg={1}>
-        <Button>Cancel</Button>
-      </Col>
-
-      
-    </Row>
-    </div>
   );
 };
